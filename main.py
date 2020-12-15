@@ -32,8 +32,7 @@ class Window:
         self.canvas.create_image(0, 0, anchor="nw", image=self.img)
         self.frame.pack()
 
-        #methods.simulate(self.canvas, self.img_matrix, self.state_matrix, self.master, self.frame)
-        self.master.after(2000, lambda: methods.simulate(self.canvas, self.img_matrix, self.state_matrix, self.master, self.frame))
+        self.master.after(50, lambda: methods.simulate(self.canvas, self.img_matrix, self.state_matrix, self.master, self.frame))
 
 
 
