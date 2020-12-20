@@ -44,7 +44,8 @@ def main():
     top.protocol("WM_DELETE_WINDOW", root.destroy)
 
     app = Window(top)
-    top.title("LGA")
+    top.title("Lattice Gas Automata")
+    top.iconbitmap('biology.ico')
     top.mainloop()
 
 

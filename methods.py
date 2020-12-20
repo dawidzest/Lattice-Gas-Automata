@@ -102,7 +102,5 @@ def state_sim(state_matrix, new_state_matrix, img_matrix, new_img_matrix):
 
                 if new_state[1] == 1 or  new_state[2] == 1 or new_state[3] == 1 or new_state[4] == 1:
                     new_img_matrix[x, y] = [255, 0, 0]
-                """if 1 in new_state[1:]:
-                    new_img_matrix[x, y] = [255, 0, 0]"""
 
     return new_state_matrix, new_img_matrix
